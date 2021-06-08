@@ -5,10 +5,16 @@
     <title>Malee's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <style>
+        #grad1 {            
+            background: linear-gradient(to top right, #ffe5c2 22%, #f1bfc5 75%,  #a58dc1 100% )
+        }
+    </style>
   </head>
+  <div id="grad1">
   <a href="https://github.com/MSeechan" target="_blank"><img src="images/git.png"/></a>
   <a href="https://steamcommunity.com/profiles/76561198202975597/" target="_blank"><img src="images/steam.png"/></a> 
-  <body style="font-family: 'Segoe UI'" background="/images/Wallpaper1.jpeg">
+  <body style="font-family: 'Segoe UI'" >
     <div id="content">
       <h1><u>Malee's Portfolio</u></h1>
       <img src="images/selfie.jpg" />
@@ -37,6 +43,7 @@
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
+    </div>
     </div>
   </body>
 </html>
