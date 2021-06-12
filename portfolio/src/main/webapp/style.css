@@ -1,46 +1,63 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  background-color: rgba(255, 0, 0, 0.1);
-  padding: 15px 50px 50px 15px;
-  border-radius: 8px;
-}
 
-#grad1 { 
-    background: linear-gradient(to top right, #ffe5c2 22%, #f1bfc5 75%,  #a58dc1 100% );
+html { 
+   min-height: 100%;
 }
 
 body {
     font-family: 'Segoe UI';
-    margin:0;
+    background-image: linear-gradient(to bottom right, #ecebe4 22%, #ded5e2 75%,  #bfc3d4 100% );
+}
+
+.paddedList li {
+
+padding-bottom: 15px;
+
 }
 
 #gallery-content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  background-color: rgba(255, 0, 0, 0.1);
-  padding: 50px 50px 50px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 50px;
 }
 
 #greeting-container {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .image-thumbnails {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .image-thumbnails img {
-  margin: 10px;
-  max-height: 200px;
-  max-width: 200px;
+    margin: 10px;
+    max-height: 200px;
+    max-width: 200px;
 }
 
 .image-thumbnails img:hover {
   border: thick solid blanchedalmond
+}
+
+.column{
+    float: left;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.column.left {
+    width: 10%;
+}
+
+.column.right {
+    width: 80%;
+    background-color: rgba(255,255,255, 50%);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(0,48,69, 10%);
 }
 
