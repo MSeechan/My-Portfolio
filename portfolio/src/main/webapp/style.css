@@ -64,8 +64,7 @@ padding-bottom: 15px;
 #fetch-container {
     display: flex;
     justify-content: center;
-    background-color: rgba(255,255,255, 50%);
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(0,48,69, 10%);
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 75%);
+ 
 }
