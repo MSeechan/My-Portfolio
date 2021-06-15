@@ -1,19 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html>  
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Malee's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="myScript.js"></script>
   </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+<body>
+    <div class="column left"> 
+    <img src="images/selfie.png"/>
+    <h1><u>Malee's Portfolio</u></h1>      
+    <p><strong>Hello!</strong> Malee here. It's a pleasure to meet everyone. Here is a little about myself:</p>
     </div>
-  </body>
+    <div class="column right">
+        <ul class="paddedList">
+            <li>I was born somewhere between Laos and Thailand while my parents were en route to a refugee camp.</li>
+            <li>I recently moved to Fresno, CA from Visalia, CA and I'm living with 2 dogs, Max and Mister.</li>
+            <img src="images/max4.jpg"/>
+            <img src="images/mister1.jpg"/>
+            <li>I'm studying computer science at FSU, but prior to this I was working full-time as a supervisor at a diode manufacturing company and attending community 
+                    college part-time. My job included having to relay user feedback to programmers and digging through databases. Eventually, I started to make simple programs for
+                    my team using Microsoft Access. It was my first exposure to coding and what ultimately lead me to pursue computer science as a career. I decided to take the leap 
+                    and become a full-time student in the summer of 2020.
+            </li>
+            <li>I love dogs (and i'm also allergic to them).</li>
+            <li>My favorite food is shrimp. I will eat any dish if it's included.</li>
+            <li>Most of my coding experience is with c++, but I'm learning python and java as well. Feel free to view my <a href="https://github.com/MSeechan" target="_blank">github</a>.
+            <li>Other than tinkering with code, I enjoy taking photos with my potato phone. I'll usually take photos of things I find interesting or humorous. See my gallery <a href="gallery.html">here!</a></li>
+        </ul>
+      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Click here to fetch a message:
+      <button onclick="showFetchTest()">Fetch Test</button></p>
+      <div id="fetch-container"></div>
+      <a href="https://github.com/MSeechan" target="_blank"><img src="images/git.png"/></a>
+      <a href="https://steamcommunity.com/profiles/76561198202975597/" target="_blank"><img src="images/steam.png"/></a>
+      <a href="https://www.linkedin.com/in/malee-seechan-474543129" target="_blank"><img src="images/linkdin.png"/></a>
+    </div>
+</body> 
 </html>
