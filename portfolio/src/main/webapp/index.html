@@ -6,29 +6,42 @@
     <link rel="stylesheet" href="style.css">
     <script src="myScript.js"></script>
   </head>
-<body>
-    <div class="column left"> 
-    <img src="images/selfie.png"  width="70%" height="70%"/>
-    <h1><u>Malee's Portfolio</u></h1>      
-    <p><strong>Hello!</strong> Malee here. It's a pleasure to meet everyone. Here is a little about myself:</p>
-    </div>
-    <div class="column right">
-        <ul class="paddedList">
-            <li>I'm studying computer science at FSU, but prior to this I was working full-time as a supervisor at a diode manufacturing company and attending community 
-                    college part-time. My job included having to relay user feedback to programmers and digging through databases. Eventually, I started to make simple programs for
-                    my team using Microsoft Access. It was my first exposure to coding and what ultimately lead me to pursue computer science as a career. I decided to take the leap 
-                    and become a full-time student in the summer of 2020.
-            </li> 
-            <li>Most of my coding experience is with c++, but I'm learning python and java as well. Feel free to view my <a href="https://github.com/MSeechan" target="_blank">github</a>.
-            <li>Other than tinkering with code, I enjoy taking photos with my potato phone. I'll usually take photos of things I find interesting or humorous. See my gallery <a href="gallery.html">here!</a></li> 
+  <body>
+    <div class="column left">
+        <img src="images/selfie.png"  width="100%" height="100%"/>
+        <ul>  
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
         </ul>
+        <div class="social-icons">
+            <a href="https://github.com/MSeechan" target="_blank"><img src="images/git.png"/></a>
+            <a href="https://steamcommunity.com/profiles/76561198202975597/" target="_blank"><img src="images/steam.png"/></a>
+            <a href="https://www.linkedin.com/in/malee-seechan-474543129" target="_blank"><img src="images/linkdin.png"/></a>
+        </div>
+    </div>    
+    <div class="column right">
+        <h1><u>Malee's Portfolio</u></h1>      
+        <p><strong>Hello!</strong> Malee here. It's a pleasure to meet everyone. Here is a little about myself:</p>
+        <p>I'm studying computer science at FSU, but prior to this I was working full-time as a supervisor at a diode manufacturing company and attending community 
+            college part-time. My job included having to relay user feedback to programmers and digging through databases. Eventually, I started to make simple programs for
+            my team using Microsoft Access. It was my first exposure to coding and what ultimately lead me to pursue computer science as a career. I decided to take the leap 
+            and become a full-time student in the summer of 2020.
+        
+            Most of my coding experience is with c++, but I'm learning python and java as well. Feel free to view my <a href="https://github.com/MSeechan" target="_blank">github</a>.
+            Other than tinkering with code, I enjoy taking photos with my potato phone. I'll usually take photos of things I find interesting or humorous. See my gallery <a href="gallery.html">here!</a></li> 
+        </p>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to fetch a message:
       <button onclick="showFetchTest()">Fetch Test</button></p>
       <div id="fetch-container"></div>
-      <a href="https://github.com/MSeechan" target="_blank"><img src="images/git.png"/></a>
-      <a href="https://steamcommunity.com/profiles/76561198202975597/" target="_blank"><img src="images/steam.png"/></a>
-      <a href="https://www.linkedin.com/in/malee-seechan-474543129" target="_blank"><img src="images/linkdin.png"/></a>
+
+      <form action="/form-handler" method="POST">
+        <p>Enter some text here:</p>
+        <textarea name="text-input">hello world</textarea>
+        <br/>
+        <input type="submit" />
+      </form>
     </div>
-</body> 
+  </body> 
 </html>

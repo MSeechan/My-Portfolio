@@ -1,29 +1,46 @@
 
-html { 
-   min-height: 100%;
+html {
+    min-height: 100%;
 }
 
 body {
-    font-family: 'Segoe UI';
+    font-family: "Montserrat", sans-serif;
     background-image: linear-gradient(to bottom right, #ecebe4 22%, #ded5e2 75%,  #bfc3d4 100% );
 }
 
-.paddedList li {
-
-padding-bottom: 15px;
-
+h1 {
+    color: #b3b3cc;
 }
 
-#gallery-content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    background-color: rgba(255, 0, 0, 0.1);
-    padding: 50px;
+h2 {
+    text-align: center;
+    color: #806699;
 }
 
-#greeting-container {
-    margin-top: 20px;
+ul {
+    list-style-type: none ;
+    padding: 10px 10px;
+    padding-inline-start: 0px;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover {
+    padding-right: 20%;
+    color: #806699;
+    border-right: solid hsl(0, 0%, 0%, 20%) 5px;
+}
+
+.active {
+    font-weight: bolder;
+    color: #806699;
+    border-right: solid hsl(226, 47%, 34%) 5px;
 }
 
 .image-thumbnails {
@@ -39,7 +56,7 @@ padding-bottom: 15px;
 }
 
 .image-thumbnails img:hover {
-    border: thick solid blanchedalmond
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
 }
 
 .column{
@@ -55,16 +72,19 @@ padding-bottom: 15px;
 
 .column.right {
     width: 70%;
-    background-color: rgba(255,255,255, 50%);
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(0,48,69, 10%);
+    background-color: rgba(255,255,255, 40%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #fetch-container {
     display: flex;
+    font-style: italic;
     justify-content: center;
     border-radius: 10px;
     background-color: rgba(255,255,255, 75%);
- 
+}
+
+.social-icons {
+    width: 100%;
+    text-align: center;
 }
