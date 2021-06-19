@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Contact</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-        <script src="myScript.js"></script>
-    </head>
-    <body>
-        <div class="column left">
-            <div id="nav-bar"></div>
-        </div>
-        <div class="column right">
-            <h1>Contact</h1>
-            <form action="/form-handler" method="POST"> 
-                <textarea name="contact-name">Your Name</textarea>
-                <br/>
-                <textarea name="contact-email">Email</textarea>
-                <br/>
-                <textarea name="contact-message" id="message"> Message</textarea>
-                <br/>
-                <input type="submit" class="btn"/>
-            </form>
-        </div>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <div class="column left">
+        <div id="nav-bar"></div>
+    </div>
+    <div class="column right">
+        <h1>Contact</h1>
+        <form action="/form-handler" method="POST">
+            <textarea name="contact-name">Your Name</textarea>
+            <br />
+            <textarea name="contact-email">Email</textarea>
+            <br />
+            <textarea name="contact-message" id="message"> Message</textarea>
+            <br />
+            <input type="submit" class="btn" />
+        </form>
+    </div>
+</body>
+
 </html>
