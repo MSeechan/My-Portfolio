@@ -4,17 +4,15 @@ html {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'montserrat', arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
     background-image: linear-gradient(to bottom right, #ecebe4 22%, #ded5e2 75%,  #bfc3d4 100% );
 }
 
 h1 {
-    color: #b3b3cc;
-}
-
-h2 {
-    text-align: center;
-    color: #806699;
+    font-weight: lighter;
+    color: #333;
 }
 
 ul {
@@ -25,19 +23,21 @@ ul {
 
 li a {
     display: block;
-    color: #000;
-    padding: 8px 16px;
+    margin: 10px;
+    color: #333;
+    padding: 5px 16px;
     text-decoration: none;
     text-align: center;
+    background-color: lightgray;
+    border-radius: 50px;
 }
 
 li a:hover {
-    padding-right: 20%;
-    color: #806699;
-    border-right: solid hsl(0, 0%, 0%, 20%) 5px;
+    color: lightgray;
+    background-color: #333;
 }
 
-.active {
+.nav-active {
     font-weight: bolder;
     color: #806699;
     border-right: solid hsl(226, 47%, 34%) 5px;
@@ -84,7 +84,53 @@ li a:hover {
     background-color: rgba(255,255,255, 75%);
 }
 
-.social-icons {
+#social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
     width: 100%;
-    text-align: center;
+    height: 50px;
 }
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+.btn {
+    color: lightgray;
+    font-size: large;
+    background-color: #333;
+    border-width: 0;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(0, 197, 197);
+}
+
+textarea {
+    font-family: 'montserrat', arial, sans-serif;
+    color: #999;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border-color: #999;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+textarea:hover {
+    color: #333;
+    background-color: white;
+}
+
+#message {
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+} 
