@@ -19,7 +19,7 @@ public class HelloWorldServlet extends HttpServlet {
         randFacts.add("I recently moved to Fresno, CA from Visalia, CA and I'm living with 2 dogs, Max and Mister.");
         randFacts.add("I love dogs (and i'm also allergic to them).");
         randFacts.add("My favorite food is shrimp. I will eat any dish if it's included.");
-        String json = convertToJson(randFacts);
+        String json = convertToJsonUsingGson(randFacts);
 
         response.setContentType("application/json;");
         response.getWriter().println(json);
@@ -44,7 +44,7 @@ public class HelloWorldServlet extends HttpServlet {
 
     private String convertToJsonUsingGson(ArrayList<String> randFacts) {
         final Gson gson = new Gson();
-        final String json = gson.toJson(randFacts);
-        return json;
+        return gson.toJson(randFacts);
+        
     }
 }
