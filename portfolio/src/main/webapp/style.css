@@ -115,6 +115,7 @@ li a:hover {
 }
 
 textarea {
+    justify-self: center;
     font-family: 'montserrat', arial, sans-serif;
     color: #999;
     background-color: rgb(233, 233, 233);
