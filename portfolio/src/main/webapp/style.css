@@ -37,12 +37,6 @@ li a:hover {
     background-color: #333;
 }
 
-.nav-active {
-    font-weight: bolder;
-    color: #806699;
-    border-right: solid hsl(226, 47%, 34%) 5px;
-}
-
 .image-thumbnails {
     display: flex;
     flex-wrap: wrap;
@@ -59,14 +53,20 @@ li a:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
 }
 
+.center-grid {
+    display:grid;
+    grid-template-columns: center;
+}
+
 .column{
     float: left;
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
+    
 }
 
-.column.left {
+.column.left .center-grid {
     width: 10%;
 }
 
@@ -101,17 +101,30 @@ li a:hover {
 }
 
 .btn {
-    color: lightgray;
+    align-self: center;    
+    color: white;
     font-size: large;
     background-color: #333;
+    height: 40px;
     border-width: 0;
     border-radius: 10px;
     transition: transform .2s;
+    padding: 10px;
+    margin: 10px;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.1);
-    background-color: rgb(0, 197, 197);
+    color: white;
+    background-color: #8004;
+}
+
+#btn-enlarge {
+    width: 50%;
+    height: 50px;
+    justify-self: center;
+
+
 }
 
 textarea {
@@ -135,3 +148,35 @@ textarea:hover {
     justify-content: center;
     min-height: 200px;
 } 
+
+#contact-list {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.list-container .btn:hover {
+    background-color: #ee3f24;
+}
+
+.contact {
+    display: flex;
+    font-size: small;
+    color: #999;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 75%;
+}
+.contact span {
+    flex-grow: 1;
+}
+
+hr {
+    width:75%;
+    height:5px;
+    border: transparent;
+    background-color: white;
+    margin: 50px auto 50px auto;
+}
+  

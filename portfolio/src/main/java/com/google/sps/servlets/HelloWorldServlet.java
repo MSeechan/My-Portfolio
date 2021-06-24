@@ -45,6 +45,5 @@ public class HelloWorldServlet extends HttpServlet {
     private String convertToJsonUsingGson(ArrayList<String> randFacts) {
         final Gson gson = new Gson();
         return gson.toJson(randFacts);
-        
     }
 }
