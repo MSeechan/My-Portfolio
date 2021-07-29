@@ -9,21 +9,25 @@
     <script src="myScript.js"></script>
 </head>
 
-<body>
-    <div class="column left">
+<body onload="loadContacts()">
+    <div class="column left center-grid">
+        <img src="images/mail.png" />
         <div id="nav-bar"></div>
     </div>
     <div class="column right">
         <h1>Contact</h1>
-        <form action="/form-handler" method="POST">
-            <textarea name="contact-name">Your Name</textarea>
+        <form action="/form-handler" method="POST" class="center-grid">
+            <textarea name="contact-name" placeholder="Your Name"></textarea>
             <br />
-            <textarea name="contact-email">Email</textarea>
+            <textarea name="contact-email" placeholder="Email"></textarea>
             <br />
-            <textarea name="contact-message" id="message"> Message</textarea>
+            <textarea name="contact-message" id="message" placeholder="Message"></textarea>
             <br />
-            <input type="submit" class="btn" />
+            <input type="submit" class="btn" id="btn-enlarge" />
         </form>
+        <hr>
+        <h1>Messages</h1>
+        <ul class="list-container" id="message-list"></ul>
     </div>
 </body>
 
