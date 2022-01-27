@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <title>Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
     <script src="myScript.js"></script>
 </head>
 
 <body>
     <div class="column left center-grid">
-        <img src="images/camera.png"/>
-        <div id="nav-bar"></div>
+        <img src="images/camera.png" class="center" />
+        <ul>
+            <li class="homeIcon"><a href="index.html">Home</a></li>
+            <li class="galleryIcon active" ><a href="gallery.html">Gallery</a></li>
+            <li class="mailIcon"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="socials"></div>
     </div>
     <div class="column right">
         <h1>Photo Gallery</h1>

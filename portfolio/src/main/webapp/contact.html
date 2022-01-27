@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
     <script src="myScript.js"></script>
 </head>
 
 <body onload="loadContacts()">
     <div class="column left center-grid">
-        <img src="images/mail.png" />
-        <div id="nav-bar"></div>
+        <img src="images/mail.png" class = "center"/>
+        <ul>
+            <li class="homeIcon"><a href="index.html">Home</a></li>
+            <li class="galleryIcon" ><a href="gallery.html">Gallery</a></li>
+            <li class="mailIcon active" ><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="socials"></div>
     </div>
     <div class="column right">
         <h1>Contact</h1>

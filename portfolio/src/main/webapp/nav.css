@@ -1,0 +1,62 @@
+ul {
+    list-style-type: none ;
+    padding: 10px 10px;
+
+}
+
+li a {
+    display: block;
+    color: #633434;
+    padding: 5px 25px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+  
+}
+
+li a:hover{
+    color: #eb5353;
+}
+
+li.active{
+    font-weight: bold;
+}
+
+li a:active{
+    color: #eb5353;
+}
+
+#homeIcon {
+    background: url('icons/home.png') no-repeat left;
+}
+
+#homeIcon:hover {
+ background: url('icons/home_fill.png') no-repeat left;
+}
+
+#galleryIcon {
+    background: url('icons/camera.png') no-repeat left;
+}
+
+#galleryIcon:hover {
+    background: url('icons/camera_fill.png') no-repeat left;
+}
+
+#mailIcon {
+    background: url('icons/envelope.png') no-repeat left;
+}
+
+#mailIcon:hover {
+    background: url('icons/envelope_fill.png') no-repeat left;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.15);
+    backface-visibility: hidden;
+   -webkit-font-smoothing: subpixel-antialiased;
+   
+}

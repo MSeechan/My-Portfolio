@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    $("#nav-bar").load("/nav.html")
+    $("#socials").load("socials.html")
 });
 
 async function showFetchTest() {
@@ -26,7 +26,7 @@ async function loadContacts() {
     const contactContainer = document.getElementById('message-list');
     // loops through responseJson foreach (takes only functions) contact element and appends to container
     responseJson.forEach(contact =>  
-        contactContainer.appendChild(createContactElement(contact)));
+    contactContainer.appendChild(createContactElement(contact)));
       
 }
 
